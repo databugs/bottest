@@ -12,8 +12,8 @@ TELEGRAM_TOKEN = getenv('TELEGRAM_TOKEN')
 if not TELEGRAM_TOKEN:
     raise ValueError('TELEGRAM_TOKEN is not set')
 
-class ProjectIdeas(BaseModel):
-    project_ideas: list[str] = Field(description="List of project ideas.")
+# class ProjectIdeas(BaseModel):
+#     project_ideas: list[str] = Field(description="List of project ideas.")
     
 class Job(BaseModel):
     title: str

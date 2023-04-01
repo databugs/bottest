@@ -88,6 +88,6 @@ conversation_handler = ConversationHandler(
 bot = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 
 bot.add_handler(conversation_handler)
-bot.error_handlers(error)
+bot.add_error_handler(error)
 
 bot.run_polling()
